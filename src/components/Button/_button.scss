@@ -1,3 +1,88 @@
-.button{
+.button {
+  border: none;
+  border-radius: $default-radius;
+  color: $black;
+  cursor: pointer;
+  outline: none;
+  padding: 4px 16px;
 
+  &:hover {
+    @include drop-shadow;
+  }
+
+  &:focus {
+    @include inner-shadow;
+  }
+
+  &.-lock {
+    cursor: auto;
+    pointer-events: none;
+  }
+
+  &.-sm {
+
+  }
+
+  &.-md {
+
+  }
+
+  &.-lg {
+
+  }
+
+  &.-xl {
+
+  }
+
+  &.-purple {
+    background-color: $purple-200;
+
+    &:hover {
+      background-color: $purple-400;
+    }
+
+    &:focus {
+      background-color: $purple-400;
+    }
+
+    &.-lock {
+      background-color: $purple-100;
+      color: $purple-200;
+    }
+  }
+
+  &.-red {
+    background-color: $red-200;
+
+    &:hover {
+      background-color: $red-400;
+    }
+
+    &:focus {
+      background-color: $red-400;
+    }
+
+    &.-lock {
+      background-color: $red-100;
+      color: $red-200;
+    }
+  }
+
+  &.-green {
+    background-color: $green-200;
+
+    &:hover {
+      background-color: $green-400;
+    }
+
+    &:focus {
+      background-color: $green-400;
+    }
+
+    &.-lock {
+      background-color: $green-200;
+      color: $green-100;
+    }
+  }
 }
