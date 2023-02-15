@@ -5,7 +5,7 @@ function App() {
     <div className="App">
         Hello world !!
         <br/><br/>
-        <Button btnClass="-purple"></Button>
+        <Button btnClass="-green"></Button>
     </div>
   );
 }
