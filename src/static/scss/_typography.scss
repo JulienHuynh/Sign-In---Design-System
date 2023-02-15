@@ -1,11 +1,29 @@
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), url("../font/Inter-VariableFont.ttf") format('truetype');
+}
+
+@mixin font-regular {
+  font: {
+    family: 'Inter';
+    weight: 400;
+  }
+}
+
+@mixin font-bold {
+  font: {
+    family: 'Inter';
+    weight: 700;
+  }
+}
+
+
 .title {
   font-size: 32px;
-  font-weight: $semi-bold;
 }
 
 .label {
   font-size: 16px;
-  font-weight: $medium;
 }
 
 .error-msg {
@@ -14,7 +32,6 @@
 
 .btn-text {
   font-size: 12px;
-  font-weight: $semi-bold;
 }
 
 .link {
