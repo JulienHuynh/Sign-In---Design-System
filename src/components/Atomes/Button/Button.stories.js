@@ -1,7 +1,7 @@
 // Button.stories.js|jsx
 
 import Button from './Button';
-import '../../static/css/style.css'
+import '../../../static/css/style.css'
 
 //👇 This default export determines where your story goes in the story list
 export default {
