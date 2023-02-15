@@ -3,42 +3,24 @@
   src: local("Inter"), url("../font/Inter-VariableFont.ttf") format('truetype');
 }
 
+@mixin font-bold {
+    font: {
+      weight: $font-bold;
+    }
+}
 @mixin font-regular {
   font: {
-    family: 'Inter';
-    weight: 400;
+    weight: $font-regular;
   }
 }
-
-@mixin font-bold {
-  font: {
-    family: 'Inter';
-    weight: 700;
-  }
-}
-
 
 .title {
-  font-size: 32px;
-}
-
-.label {
-  font-size: 16px;
-}
-
-.error-msg {
-  font-size: 16px;
-}
-
-.btn-text {
-  font-size: 12px;
-}
-
-.link {
-  font-size: 12px;
-  text-decoration: underline;
-}
-
-.paragraph {
-  font-size: 12px;
+  font-family: 'Inter';
+  font-size: var(--r4xl);
+  &.-bold {
+    @include font-bold;
+  }
+  &.-regular {
+    @include font-regular;
+  }
 }

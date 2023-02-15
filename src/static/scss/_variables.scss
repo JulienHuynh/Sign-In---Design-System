@@ -1,3 +1,16 @@
+// FONT SIZES REM
+html {
+  font-size: calc((var(--base) / 16) * 100%);
+  --r4xl: calc((32 / var(--base) * 1rem));
+  --r3xl: calc((30 / var(--base) * 1rem));
+  --r2xl: calc((24 / var(--base) * 1rem));
+  --rxl: calc((20 / var(--base) * 1rem));
+  --rlg: calc((18 / var(--base) * 1rem));
+  --rmd: calc((16 / var(--base) * 1rem));
+  --rsm: calc((14 / var(--base) * 1rem));
+  --base: 16;
+}
+
 // COLORS
 $white: #ffffff;
 $black: #060E0E;
@@ -46,18 +59,13 @@ $purple-700: #553C9A;
 $purple-800: #44337A;
 $purple-900: #322659;
 
-// FONT SIZES
-$fs-4xl: 36px;
-$fs-3xl: 30px;
-$fs-2xl: 24px;
-$fs-xl: 20px;
-$fs-lg: 18px;
-$fs-md: 16px;
-$fs-sm: 14px;
-
 // BORDER-RADIUS
 $default-radius: 4px;
 $container-radius: 10px;
+
+// FONT WEIGHT
+$font-bold: 700;
+$font-regular: 400;
 
 // BOX-SHADOW
 $drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
