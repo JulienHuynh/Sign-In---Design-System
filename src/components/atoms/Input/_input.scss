@@ -1,0 +1,30 @@
+@mixin input {
+  color: $black;
+  border: 1px solid $black;
+  background-color: $gray-100;
+  border-radius: $default-radius;
+  font-size: var(--rsm);
+  height: 34px;
+  padding: 0 10px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.default-input {
+  @include input;
+}
+
+.lock-input {
+  @include input;
+  background-color: $white;
+  color: $gray-300;
+  border: 1px solid $gray-300;
+}
+
+.error-input {
+  @include input;
+  background-color: $red-50;
+  color: $red-500;
+  border: 1px solid $red-500;
+}

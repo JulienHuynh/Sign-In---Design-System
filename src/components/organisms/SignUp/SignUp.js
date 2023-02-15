@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Button from '../../Atomes/Button/Button'
 import Link from "../../Atomes/Link/Link";
 
 function SignUp (props) {

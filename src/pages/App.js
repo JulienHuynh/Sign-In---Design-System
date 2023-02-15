@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import SignIn from '../components/Organismes/SignIn/SignIn';
-import SignUp from '../components/Organismes/SignUp/SignUp';
-import UpdatePassword from '../components/Organismes/UpdatePassword/UpdatePassword';
+import SignIn from '../components/organisms/SignIn/SignIn';
+import SignUp from '../components/organisms/SignUp/SignUp';
+import UpdatePassword from '../components/organisms/UpdatePassword/UpdatePassword';
 
 function App() {
     const [currentView, setCurrentView] = useState('SignIn')

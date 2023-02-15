@@ -1,10 +1,8 @@
 // Variables
 @import "variables";
 @import "typography";
-@import "ui";
-@import "designToken";
 
 // Components
-@import "../../components/Atomes/Button/button";
-@import "../../components/Atomes/Input/input";
-@import "../../components/Atomes/Link/link";
+@import "../../components/atoms/Button/button";
+@import "../../components/atoms/Input/input";
+@import "../../components/atoms/Link/link";
