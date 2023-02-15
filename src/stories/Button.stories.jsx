@@ -1,4 +1,5 @@
 import React from 'react';
+//import '../components/Button/_button.scss'
 
 import { Button } from './Button';
 
@@ -20,6 +21,8 @@ export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
   label: 'Button',
+  backgroundColor: 'red',
+  color: 'blue'
 };
 
 export const Secondary = Template.bind({});
