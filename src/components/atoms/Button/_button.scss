@@ -1,14 +1,10 @@
-@mixin button {
+.button {
   border: none;
   border-radius: $default-radius;
-  color: $black;
+  color: $white;
   cursor: pointer;
   outline: none;
   padding: 4px 16px;
-}
-
-.button {
-  @include button;
 
   &:hover {
     box-shadow: $drop-shadow;
@@ -18,7 +14,7 @@
     box-shadow: $inner-shadow;
   }
 
-  &.-lock {
+  &.-disabled {
     cursor: auto;
     pointer-events: none;
   }
@@ -39,41 +35,24 @@
 
   }
 
-  &.-purple {
-    background-color: $purple-200;
+  &.-primary {
+    background-color: $purple-500;
 
     &:hover {
-      background-color: $purple-400;
+      background-color: $purple-600;
     }
 
     &:focus {
-      background-color: $purple-400;
+      background-color: $purple-600;
     }
 
-    &.-lock {
+    &.-disabled {
       background-color: $purple-100;
       color: $purple-200;
     }
   }
 
-  &.-red {
-    background-color: $red-200;
-
-    &:hover {
-      background-color: $red-400;
-    }
-
-    &:focus {
-      background-color: $red-400;
-    }
-
-    &.-lock {
-      background-color: $red-100;
-      color: $red-200;
-    }
-  }
-
-  &.-green {
+  &.-secondary {
     background-color: $green-200;
 
     &:hover {
@@ -84,9 +63,27 @@
       background-color: $green-400;
     }
 
-    &.-lock {
+    &.-disabled {
       background-color: $green-200;
       color: $green-100;
+    }
+  }
+
+  &.-destructive {
+    background-color: $red-400;
+    color: $black;
+
+    &:hover {
+      background-color: $red-500;
+    }
+
+    &:focus {
+      background-color: $red-500;
+    }
+
+    &.-disabled {
+      background-color: $red-100;
+      color: $red-200;
     }
   }
 }

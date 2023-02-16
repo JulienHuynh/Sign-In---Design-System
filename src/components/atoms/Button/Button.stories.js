@@ -16,6 +16,26 @@ export default {
 //👇 We create a “template” of how args map to rendering
 const Template = (args) => <Button {...args} />;
 
-export const buttonRender = () => {
-    return <Button btnClass='-green' btnLabel='Button'/>
-}
+export const Primary = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+Primary.args = {
+    variant: 'primary',
+    label: 'Button',
+    disabled: false,
+};
+
+export const Secondary = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+Secondary.args = {
+    variant: 'secondary',
+    label: 'Button',
+    disabled: false,
+};
+
+export const Destructive = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+Destructive.args = {
+    variant: 'destructive',
+    label: 'Button',
+    disabled: false,
+};
