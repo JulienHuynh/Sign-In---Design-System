@@ -1,3 +1,29 @@
-.link{
+@mixin link {
+  color: $black;
+  cursor: pointer;
+  text-decoration: underline;
+}
 
+.link {
+  @include link;
+
+  &:hover {
+    box-shadow: $drop-shadow;
+  }
+
+  &.-sm {
+
+  }
+
+  &.-md {
+
+  }
+
+  &.-lg {
+
+  }
+
+  &.-xl {
+
+  }
 }
