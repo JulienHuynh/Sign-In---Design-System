@@ -1,9 +1,31 @@
-function Button(props) {
-    return (
-        <button className={"button " + props.btnClass} /* TODO mettre onClick={() => props.setCurrentView(props.view)} dans le composant link et l'enlever du button */>
-            {props.btnLabel}
-        </button>
-    );
-}
+import React from 'react';
+import PropTypes from 'prop-types';
+import '../../../static/css/style.css'
 
-export default Button;
+/**
+ * Primary UI component for user interaction
+ */
+export const Button = ({variant, size, disabled}) => {
+    const mode = disabled ? '-disabled' : '';
+    return (
+        <button className={"button " + `-${size} ` + `-${variant} ` + mode}>This is a buttton</button>
+    );
+};
+
+Button.propTypes = {
+    /**
+     * Is this the principal call to action on the page?
+     */
+    variant: PropTypes.string,
+    /**
+     * How large should the button be?
+     */
+    size: PropTypes.oneOf(['small', 'medium', 'large']),
+};
+
+Button.defaultProps = {
+    variant: 'primary',
+    size: 'medium',
+    label: 'Button',
+    disabled: false,
+};
