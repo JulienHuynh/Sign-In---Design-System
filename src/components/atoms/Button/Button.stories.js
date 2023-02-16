@@ -22,6 +22,7 @@ Primary.args = {
     variant: 'primary',
     label: 'Button',
     disabled: false,
+    size: 'medium',
 };
 
 export const Secondary = Template.bind({});
@@ -30,6 +31,7 @@ Secondary.args = {
     variant: 'secondary',
     label: 'Button',
     disabled: false,
+    size: 'medium',
 };
 
 export const Destructive = Template.bind({});
@@ -38,4 +40,5 @@ Destructive.args = {
     variant: 'destructive',
     label: 'Button',
     disabled: false,
+    size: 'medium',
 };

@@ -4,15 +4,16 @@
 }
 
 @mixin font-bold {
+  margin: 0;
   font: {
-    margin: 0;
     family: 'Inter';
     weight: $font-bold;
   }
 }
+
 @mixin font-regular {
+  margin: 0;
   font: {
-    margin: 0;
     family: 'Inter';
     weight: $font-regular;
   }
@@ -20,9 +21,11 @@
 
 .label {
   font-size: var(--rmd);
+
   &.-bold {
     @include font-bold;
   }
+
   &.-regular {
     @include font-regular;
   }
@@ -30,50 +33,52 @@
 
 .link {
   font-size: var(--rsm);
+
   &.-bold {
     @include font-bold;
   }
+
   &.-regular {
     @include font-regular;
   }
 }
 
-input{
+input {
   @include font-regular;
   font-size: var(--rsm);
 }
 
-h1 {
+h1, .title-1 {
   @include font-bold;
   font-size: var(--r4xl);
 }
 
-h2 {
+h2, .title-2 {
   @include font-bold;
   font-size: var(--r3xl);
 }
 
-h3 {
+h3, .title-3 {
   @include font-bold;
   font-size: var(--r2xl);
 }
 
-h4 {
+h4, .title-4 {
   @include font-bold;
   font-size: var(--rxl);
 }
 
-h5 {
+h5, .title-5 {
   @include font-bold;
   font-size: var(--rlg);
 }
 
-h6 {
+h6, .title-6 {
   @include font-bold;
   font-size: var(--rmd);
 }
 
-p {
+p, .body {
   @include font-regular;
   font-size: var(--rsm);
 }

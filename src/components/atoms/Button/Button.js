@@ -16,11 +16,11 @@ Button.propTypes = {
     /**
      * Is this the principal call to action on the page?
      */
-    variant: PropTypes.string,
+    variant: PropTypes.oneOf(['primary', 'secondary', 'destructive']),
     /**
      * How large should the button be?
      */
-    size: PropTypes.oneOf(['small', 'medium', 'large']),
+    size: PropTypes.oneOf(['small', 'medium', 'large', 'xl']),
 };
 
 Button.defaultProps = {
@@ -29,3 +29,5 @@ Button.defaultProps = {
     label: 'Button',
     disabled: false,
 };
+
+export default Button

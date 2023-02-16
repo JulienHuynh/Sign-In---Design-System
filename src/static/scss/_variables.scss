@@ -1,13 +1,13 @@
 // FONT SIZES REM
 html {
   font-size: calc((var(--base) / 16) * 100%);
-  --r4xl: calc((32 / var(--base) * 1rem));
-  --r3xl: calc((30 / var(--base) * 1rem));
-  --r2xl: calc((24 / var(--base) * 1rem));
-  --rxl: calc((20 / var(--base) * 1rem));
-  --rlg: calc((18 / var(--base) * 1rem));
-  --rmd: calc((16 / var(--base) * 1rem));
-  --rsm: calc((14 / var(--base) * 1rem));
+  --r4xl: calc((30 / var(--base) * 1rem));
+  --r3xl: calc((24 / var(--base) * 1rem));
+  --r2xl: calc((20 / var(--base) * 1rem));
+  --rxl: calc((18 / var(--base) * 1rem));
+  --rlg: calc((16 / var(--base) * 1rem));
+  --rmd: calc((14 / var(--base) * 1rem));
+  --rsm: calc((12 / var(--base) * 1rem));
   --base: 16;
 }
 
