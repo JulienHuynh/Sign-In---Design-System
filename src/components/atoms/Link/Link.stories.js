@@ -17,5 +17,5 @@ export default {
 const Template = (args) => <Link {...args} />;
 
 export const FirstStory = () => {
-    return <Link linkLabel="Crée un compte" />
+    return <Link linkClass="-regular" linkLabel="Crée un compte" />
 }
