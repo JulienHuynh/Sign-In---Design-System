@@ -13,7 +13,7 @@ export const Input = ({ type, lock, name, placeholder, size }) => {
     }
 
     const handleChange = event => {
-        if (!isValidEmail(event.target.value)) {
+        if (type === 'email' && !isValidEmail(event.target.value)) {
             setError('Email is invalid');
         } else {
             setError(null);
@@ -32,7 +32,7 @@ export const Input = ({ type, lock, name, placeholder, size }) => {
                 name={name}
                 type={type}
                 value={email}
-                onChange={type === 'email' && handleChange}
+                onChange={handleChange}
             />
         </>
     );
