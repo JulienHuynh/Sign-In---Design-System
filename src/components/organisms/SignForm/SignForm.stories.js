@@ -1,13 +1,13 @@
 import React from 'react';
-import { Sign } from './Input';
+import { SignForm } from './SignForm';
 
 export default {
-    component: Input,
+    component: SignForm,
 };
 
-const Template = (args) => <Input {...args} />;
+const Template = (args) => <SignForm {...args} />;
 
-export const signRender = Template.bind({});
-signRender.args = {
-
+export const signForm = Template.bind({});
+signForm.args = {
+    title: 'Title form'
 };

@@ -4,7 +4,7 @@
 }
 
 @mixin font-bold {
-  margin: 0;
+  margin: 0 !important;
   font: {
     family: 'Inter';
     weight: $font-bold;
@@ -12,7 +12,7 @@
 }
 
 @mixin font-regular {
-  margin: 0;
+  margin: 0 !important;
   font: {
     family: 'Inter';
     weight: $font-regular;

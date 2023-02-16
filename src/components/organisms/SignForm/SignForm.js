@@ -1,15 +1,28 @@
 import React, { useState } from 'react'
 import Link from "../../atoms/Link/Link";
+import {FormInput} from "../../molecules/FormInput/FormInput";
+import PropTypes from "prop-types";
 
-function SignIn (props) {
+export const SignForm = ({ title, action, ...props }) => {
 
     return (
-        <React.Fragment>
-            <h1>Sign In</h1>
-            <Link linkClass="-regular" linkLabel="Crée un compte" setCurrentView={props.setCurrentView} view="SignUp" />
+        <div className="sign-form">
+            <h1>{title}</h1>
+            <form action={action} method='POST' className="form-section">
+                <FormInput {...props}></FormInput>
+                <FormInput {...props}></FormInput>
+            </form>
+            <Link linkClass="-regular" linkLabel="Créer un compte" setCurrentView={props.setCurrentView} view="SignUp" />
             <Link linkClass="-regular" linkLabel="Mot de passe oublié" setCurrentView={props.setCurrentView} view="UpdatePassword" />
-        </React.Fragment>
-    )
+        </div>
+    );
 }
 
-export default SignIn
+SignForm.propTypes = {
+    title: PropTypes.string.isRequired,
+    action: PropTypes.string.isRequired,
+};
+
+SignForm.defaultProps = {
+    title: 'Title form'
+};
