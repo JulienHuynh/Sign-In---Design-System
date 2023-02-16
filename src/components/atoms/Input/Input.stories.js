@@ -10,11 +10,13 @@ const Template = (args) => <Input {...args} />;
 export const defaultInput = Template.bind({});
 defaultInput.args = {
     lock: false,
+    size: 'medium',
     placeholder: 'Placeholder...',
 };
 
 export const errorInput = Template.bind({});
 errorInput.args = {
     error: true,
+    size: 'medium',
     placeholder: 'Placeholder...',
 };
