@@ -35,3 +35,8 @@
 .input-size--large {
   width: $large-input-w;
 }
+
+.error-message {
+  color: $red-500;
+  margin-bottom: 4px //$base-space-1;
+}

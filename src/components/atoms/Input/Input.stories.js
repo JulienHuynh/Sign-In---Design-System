@@ -12,6 +12,7 @@ defaultInput.args = {
     lock: false,
     size: 'medium',
     placeholder: 'Placeholder...',
+    type: 'email',
 };
 
 export const errorInput = Template.bind({});
@@ -19,4 +20,5 @@ errorInput.args = {
     error: true,
     size: 'medium',
     placeholder: 'Placeholder...',
+    type: 'email',
 };
