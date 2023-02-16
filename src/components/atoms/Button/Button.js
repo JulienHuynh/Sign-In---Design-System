@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../../../static/css/style.css'
 
-export const Button = ({variant, size, disabled}) => {
+export const Button = ({variant, size, disabled, label}) => {
     const mode = disabled ? '-disabled' : '';
     return (
-        <button className={"button " + `-${size} ` + `-${variant} ` + mode}>This is a buttton</button>
+        <button className={"button " + `-${size} ` + `-${variant} ` + mode}>{label}</button>
     );
 };
 
