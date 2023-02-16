@@ -4,18 +4,22 @@
 }
 
 @mixin font-bold {
-    font: {
-      weight: $font-bold;
-    }
+  font: {
+    margin: 0;
+    family: 'Inter';
+    weight: $font-bold;
+  }
 }
 @mixin font-regular {
   font: {
+    margin: 0;
+    family: 'Inter';
     weight: $font-regular;
   }
 }
 
-.title {
-  font-family: 'Inter';
+.label {
+  font-size: var(--rmd);
   &.-bold {
     @include font-bold;
   }
@@ -24,37 +28,52 @@
   }
 }
 
+.link {
+  font-size: var(--rsm);
+  &.-bold {
+    @include font-bold;
+  }
+  &.-regular {
+    @include font-regular;
+  }
+}
+
+input{
+  @include font-regular;
+  font-size: var(--rsm);
+}
+
 h1 {
-  margin: 0;
+  @include font-bold;
   font-size: var(--r4xl);
 }
 
 h2 {
-  margin: 0;
+  @include font-bold;
   font-size: var(--r3xl);
 }
 
 h3 {
-  margin: 0;
+  @include font-bold;
   font-size: var(--r2xl);
 }
 
 h4 {
-  margin: 0;
+  @include font-bold;
   font-size: var(--rxl);
 }
 
 h5 {
-  margin: 0;
+  @include font-bold;
   font-size: var(--rlg);
 }
 
 h6 {
-  margin: 0;
+  @include font-bold;
   font-size: var(--rmd);
 }
 
 p {
-  margin: 0;
+  @include font-regular;
   font-size: var(--rsm);
 }

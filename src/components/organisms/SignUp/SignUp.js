@@ -5,7 +5,7 @@ function SignUp (props) {
     return (
         <>
             <h1>Sign Up</h1>
-            <Link linkLabel="J'ai déjà un compte" setCurrentView={props.setCurrentView} view="SignIn" />
+            <Link linkClass="-regular" linkLabel="J'ai déjà un compte" setCurrentView={props.setCurrentView} view="SignIn" />
         </>
     )
 }
