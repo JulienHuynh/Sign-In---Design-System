@@ -15,6 +15,6 @@ defaultInput.args = {
 
 export const errorInput = Template.bind({});
 errorInput.args = {
-    error: false,
+    error: true,
     placeholder: 'Placeholder...',
 };
